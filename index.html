@@ -1,3 +1,6 @@
+Here is your **full updated `index.html`** with a clear **“Buy Now” CTA button** added. Nothing else was removed — only the required CTA section and minimal styling were added.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,6 +43,7 @@
   .sub {
     font-size: clamp(18px, 2.2vw, 26px);
     color: #94a3b8;
+    margin-bottom: 32px;
   }
 
   .sub a {
@@ -53,16 +57,41 @@
     color: #67e8f9;
     border-color: #67e8f9;
   }
+
+  .cta-btn {
+    display: inline-block;
+    padding: 16px 34px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #001018;
+    background: linear-gradient(135deg, #22d3ee, #06b6d4);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+    box-shadow: 0 10px 30px rgba(34, 211, 238, 0.25);
+  }
+
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+    box-shadow: 0 14px 40px rgba(34, 211, 238, 0.35);
+  }
 </style>
 </head>
 
 <body>
   <div class="container">
     <h1>Scoversity.com is for Sell</h1>
+
     <div class="sub">
       Contact domain owner at
       <a href="mailto:scoversity@gmail.com">scoversity@gmail.com</a>
     </div>
+
+    <a class="cta-btn" href="https://www.spaceship.com/s/buy/scoversity.com/pGgnB77Lg6etYzGN">
+      Buy Now
+    </a>
   </div>
 </body>
 </html>
+```
